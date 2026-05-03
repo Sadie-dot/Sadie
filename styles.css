@@ -228,6 +228,10 @@ button { font-family: inherit; cursor: pointer; }
   padding: 20px;
 }
 
+/* Even cards: image on right */
+.card--reverse { grid-template-columns: 55% 45%; }
+.card--reverse .case-card__visual { order: 2; }
+
 /* Per-card colour tints */
 .card--praxis   .case-card__visual { background: #C4CEEA; }
 .card--neuro    .case-card__visual { background: #F5C0CC; }
@@ -747,6 +751,7 @@ tr:last-child td { border-bottom: none; }
 
   /* Case cards */
   .case-card { grid-template-columns: 1fr; }
+  .card--reverse .case-card__visual { order: 0; }
   .case-card__visual { min-height: 200px; }
   .case-card__body { padding: 24px; }
   .case-card__title { font-size: 1.125rem; }
