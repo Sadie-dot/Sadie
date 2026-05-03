@@ -148,6 +148,18 @@ button { font-family: inherit; cursor: pointer; }
 .btn-teal  { background: var(--teal);  color: #fff; }
 .btn-mauve { background: var(--mauve); color: #fff; }
 
+/* GO TO CASE buttons — small outlined, not full-width */
+.case-card__body .btn {
+  align-self: flex-start;
+  background: transparent;
+  padding: 6px 18px;
+  font-size: 0.8125rem;
+}
+.case-card__body .btn-navy  { color: var(--navy);  border: 1.5px solid var(--navy); }
+.case-card__body .btn-red   { color: var(--red);   border: 1.5px solid var(--red); }
+.case-card__body .btn-teal  { color: var(--teal);  border: 1.5px solid var(--teal); }
+.case-card__body .btn-mauve { color: var(--mauve); border: 1.5px solid var(--mauve); }
+
 /* ─── ════ HOME PAGE ════ ─────────────────────────── */
 
 /* Hero */
@@ -213,13 +225,14 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 /* Per-card colour tints */
-.card--praxis   .case-card__visual { background: #B8C4DE; }
-.card--neuro    .case-card__visual { background: #B8C2D8; }
-.card--medical  .case-card__visual { background: #BFC4CE; }
-.card--springer .case-card__visual { background: #D0CBE0; }
+.card--praxis   .case-card__visual { background: #C4CEEA; }
+.card--neuro    .case-card__visual { background: #F5C0CC; }
+.card--medical  .case-card__visual { background: #B8D8D0; }
+.card--springer .case-card__visual { background: #D0C4E4; }
 
 /* Badge icon at top of text column */
 .case-card__badge {
